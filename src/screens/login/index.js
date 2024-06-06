@@ -34,19 +34,19 @@ export default function Login({ navigation }) {
           <View className="w-full">
             <SafeAreaView>
               <TextInput
-                placeholder="Nome de usuário, email ou número de celular"
-                placeholderTextColor={'#ccc'}
                 className="h-10 m-3 p-6 rounded-md border border-gray-300"
                 onChangeText={onChangeText}
                 value={text}
+                placeholder="Nome de usuário, email ou número de celular"
+                placeholderTextColor={'#ccc'}
               />
               <TextInput
                 className="h-10 m-3 p-6 rounded-md border border-gray-300"
-                placeholderTextColor={'#ccc'}
                 onChangeText={onChangeNumber}
                 value={number}
-                placeholder="Senha"
                 keyboardType="numeric"
+                placeholder="Senha"
+                placeholderTextColor={'#ccc'}
               />
             </SafeAreaView>
             <View className="px-2">

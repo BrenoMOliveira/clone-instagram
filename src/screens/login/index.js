@@ -13,17 +13,16 @@ export default function Login({ navigation }) {
 
   return (
     <LinearGradient
-      colors={['#FED8B1', '#FFB7B2', '#FDC7E1', '#E2C1F0']}
-      locations={[0.0, 0.3, 0.6, 1.0]}
+      colors={['#2C3240', '#295C91', '#1B373A']}
+      locations={[0.0, 0.6, 1.0]}
       style={{ flex: 1 }}
     >
       <View className="flex-1 mt-5">
         <StatusBar style="dark" translucent />
         <View className="p-5">
-          <AntDesign name="arrowleft" size={24} color="black" />
+          <AntDesign name="arrowleft" size={24} color="white" />
         </View>
         <View className="flex items-center">
-          <Text className="text-xl font-bold">Português (Brasil)</Text>
           <View className="my-20">
             <Image
               className="w-20 h-20"
@@ -35,16 +34,18 @@ export default function Login({ navigation }) {
           <View className="w-full">
             <SafeAreaView>
               <TextInput
-                placeholder="Nome de usuário"
+                placeholder="Nome de usuário, email ou número de celular"
+                placeholderTextColor={'#ccc'}
                 className="h-10 m-3 p-6 rounded-md border border-gray-300"
                 onChangeText={onChangeText}
                 value={text}
               />
               <TextInput
                 className="h-10 m-3 p-6 rounded-md border border-gray-300"
+                placeholderTextColor={'#ccc'}
                 onChangeText={onChangeNumber}
                 value={number}
-                placeholder="useless placeholder"
+                placeholder="Senha"
                 keyboardType="numeric"
               />
             </SafeAreaView>
@@ -55,7 +56,7 @@ export default function Login({ navigation }) {
               />
             </View>
             <View className="items-center">
-              <Text className="font-semibold text-sm">
+              <Text className="font-semibold text-sm text-white">
                 Esqueceu a senha?
               </Text>
             </View>

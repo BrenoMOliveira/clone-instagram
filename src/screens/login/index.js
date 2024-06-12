@@ -13,14 +13,14 @@ export default function Login({ navigation }) {
 
   return (
     <LinearGradient
-      colors={['#2C3240', '#295C91', '#1B373A']}
-      locations={[0.0, 0.6, 1.0]}
+      colors={['#FCF2F2', '#69A1E2', '#EBFAF2']}
+      locations={[0.0, 0.5, 1.0]}
       style={{ flex: 1 }}
     >
       <View className="flex-1 mt-5">
         <StatusBar style="dark" translucent />
         <View className="p-5">
-          <AntDesign name="arrowleft" size={24} color="white" />
+          <AntDesign name="arrowleft" size={24} color="black" />
         </View>
         <View className="flex items-center">
           <View className="my-20">
@@ -34,19 +34,19 @@ export default function Login({ navigation }) {
           <View className="w-full">
             <SafeAreaView>
               <TextInput
-                className="h-10 m-3 p-6 rounded-md border border-gray-300"
+                className="h-10 m-3 p-6 rounded-md border border-gray-400 bg-white"
                 onChangeText={onChangeText}
                 value={text}
                 placeholder="Nome de usuário, email ou número de celular"
-                placeholderTextColor={'#ccc'}
+                placeholderTextColor={'#a19f9f'}
               />
               <TextInput
-                className="h-10 m-3 p-6 rounded-md border border-gray-300"
+                className="h-10 m-3 p-6 rounded-md border border-gray-400 bg-white"
                 onChangeText={onChangeNumber}
                 value={number}
                 keyboardType="numeric"
                 placeholder="Senha"
-                placeholderTextColor={'#ccc'}
+                placeholderTextColor={'#a19f9f'}
               />
             </SafeAreaView>
             <View className="px-2">
@@ -56,7 +56,7 @@ export default function Login({ navigation }) {
               />
             </View>
             <View className="items-center">
-              <Text className="font-semibold text-sm text-white">
+              <Text className="font-semibold text-sm text-black">
                 Esqueceu a senha?
               </Text>
             </View>
